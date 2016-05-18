@@ -246,7 +246,7 @@ TScalar Vector2d<TScalar>::distanceTo(const Vector2d<TScalar>& point) const {
 }
 
 template <typename TScalar>
-TScalar Vector2d<TScalar>::distanceToSq(const Vector2d<TScalar>& point) const {
+TScalar Vector2d<TScalar>::distanceSqTo(const Vector2d<TScalar>& point) const {
     return Arithmetic<TScalar>::sqr(this->mx - point.mx) + Arithmetic<TScalar>::sqr(this->my - point.my);
 }
 
